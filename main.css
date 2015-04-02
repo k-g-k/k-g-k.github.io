@@ -60,7 +60,7 @@ a {
 
 
 .blank {
-  padding: 1em;
+  padding: .5em;
 }
 
 @media (max-width: 2000px) {
