@@ -121,9 +121,24 @@ a {
 @media (max-width: 500px) {
 
   body {
-    font-size: 1em;
+    font-size: 1.25em;
     padding: 1em 0 1em 0;
     margin: .5em;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  body {
+    font-size: 1em;
+    padding: 1em 0 1em 0;
+    margin-bottom: 1em;
     position: absolute;
     top: 10%;
     right: 0;
