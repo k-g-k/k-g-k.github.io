@@ -29,7 +29,7 @@ body {
   border-color: black;
   border-radius: 1em;
   box-sizing: border-box;
-  margin:.5em;
+  margin:.25em;
 }
 
 h1 {
@@ -69,14 +69,12 @@ a {
 }
 
 
-.blank {
-  padding: .5em;
-}
 
 @media (max-width: 2000px) {
 
   body {
     font-size: 1.5em;
+    padding: 1.5em 0 1em 0;
     position: absolute;
     top: 0;
     right: 0;
