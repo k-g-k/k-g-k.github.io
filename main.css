@@ -27,6 +27,7 @@ body {
   border-width: 1.5em;
   border-style:  solid;
   border-color: black;
+  border-radius: 1em;
   box-sizing: border-box;
   margin:.5em;
 }
