@@ -24,7 +24,9 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  border: 2em solid black;
+  border-width: 2em 1em 2em 1em;
+  border-style:  solid;
+  border-color: black;
   box-sizing: border-box;
   margin:.5em;
 }
