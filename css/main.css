@@ -85,28 +85,37 @@ button {
 }
 
 .msg {
-  margin: 1em;
+  margin: 1.5em;
 
-  font-size: 5vw;
-
-}
-
-.edu {
-  font-size: 4vw;
+  font-size: 3vw;
   font-family: 'Montserrat';
-  padding-top: 1em;
-  padding-bottom: .5em;
   text-transform: uppercase;
 }
 
+.edu {
+  font-size: 6vw;
+  font-family: 'Montserrat';
+  padding-top: 1em;
+  padding-bottom: .5em;
+
+}
+
 .duke, .iron-yard {
-  font-size: 3vw;
+  font-size: 4vw;
   padding: .3em;
+  color: #444;
+
+    text-transform: uppercase;
+
 }
 
 .duke em, .iron-yard em {
-  font-size: 2vw;
+  font-size: 3.5vw;
   display: block;
+  color: #888;
+  text-transform: none;
+
+
 }
 
 .wrapper {
