@@ -152,6 +152,8 @@ h3 {
   font-size: 6vw;
   margin: .5em .5em 0 .5em;
   cursor: pointer;
+  color: #444;
+  text-decoration: none;
 
 
 }
@@ -162,6 +164,9 @@ h3 {
   font-size: 8vw;
   margin: .5em .5em 0 .5em;
   cursor: pointer;
+  color: #444;
+  text-decoration: none;
+
 
 }
 
