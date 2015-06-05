@@ -191,7 +191,7 @@
 
   .my-name {
     font-size: 1.25em;
-    color: #444;
+    color: #124b66;
     display: inline-block;
     /*padding: .5em .25em;*/
     font-family: 'Montserrat';
@@ -243,7 +243,7 @@
     font-size: .7em;
     margin: 1em 3em;
     text-align: justify;
-    color: #444;
+    color: black;
   }
 
 
@@ -253,7 +253,7 @@
     font-family: 'Montserrat';
     padding-top: .5em;
     padding-bottom: .25em;
-    color: #444;
+    color: #0d384c;
   }
 
   .duke, .iron-yard {
@@ -290,6 +290,7 @@
 .icons {
   display: inline-block;
   margin-top: 1em;
+  color: #2293CB;
 }
 
   .icon-email {
@@ -298,7 +299,7 @@
     /*margin: -.5em 1em 0 .5em;*/
     cursor: pointer;
     text-decoration: none;
-    color: #444;
+    color:  #444;
   }
   .icon-linkedin {
     display: inline-block;
@@ -310,8 +311,9 @@
     color: #444;
     text-decoration: none;
 
-
   }
+
+
 
 
   .icon-github {
@@ -319,14 +321,32 @@
     font-size: 8vw;
     /*margin: 0 .5em 0 .5em;*/
     cursor: pointer;
-    color: #444;
+    color:  #444;
     text-decoration: none;
+  }
 
-
+  .icon-linkedin:hover,
+  .icon-linkedin:active,
+  .icon-email:hover,
+  .icon-email:active,
+  .icon-github:hover,
+  .icon-github:active {
+    color:#0d384c ;
   }
 
   .work-details {
     margin-top: 1em;
+  }
+
+
+  .project-title {
+    color: #124b66;
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+
+  .appt-app {
+    margin-bottom: 1em;
   }
 
 /*}*/
@@ -405,6 +425,10 @@
         font-size: 13vw;
         margin: .5em auto 0 auto;
 
+      }
+
+      .project-title {
+        font-size: 7vw;
       }
 
 }
@@ -492,7 +516,7 @@
   .duke, .iron-yard {
     font-size: 4vw;
     padding: .3em;
-    color: #444;
+    color: #0d384c;
     font-family: 'Montserrat';
     line-height: 4.5vw
   }
@@ -534,6 +558,11 @@
     .about-me, .skills, .projects {
       height: 100vh;
       margin: 0;
+    }
+
+    .project-title {
+      font-size: 9.5vw;
+      margin-top: 2em;
     }
 
 }
