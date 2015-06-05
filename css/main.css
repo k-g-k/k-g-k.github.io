@@ -3,398 +3,537 @@
   padding: 0;
 }
 
-body {
 
-font-family: 'Questrial', sans-serif;
-}
 
-button {
+/*@media (max-width: 1250px) {*/
+
+  body {
   font-family: 'Questrial', sans-serif;
-}
+
+  }
+
+  button {
+    font-family: 'Questrial', sans-serif;
+  }
 
 
-.main {
-  height: 100vh;
-  display: table;
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-}
+  .main {
+    height: 100vh;
+    display: table;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
 
-.display {
-  display: table-cell;
-  vertical-align: middle;
-  font-family: 'Oregano';
+  .display {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Oregano';
 
-}
+  }
 
-.main .display-name  {
-  width: 100vw;
-  font-size: 35vw;
-  font-family: 'Oregano';
-  color: black;
-}
+  .main .display-name  {
+    width: 96vw;
+    font-size: 30em;
+    font-family: 'Oregano';
+    color: black;
+  }
 
-.main .display-title {
-  padding-bottom: .5em;
-  font-size: 4.5vw;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Montserrat', 'Questrial';
-  text-transform: uppercase;
-  text-decoration: bold;
-  color: #888;
-}
-
-.main .display-sections {
-  font-family: 'Questrial';
-  font-size: 3vw;
-}
-
-.display-sections a {
-  color: #444;
-  text-decoration: none;
-}
-
-.main .display-section {
-  font-family: 'Questrial';
-  font-size: 3.25vw;
-  padding: .5em;
-  display: inline-block;
-  color: #444;
-}
-
-.about-me, .resume, .projects {
-  height: 100vh;
-  display: table;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.about-sections, .resume-sections, .work-sections {
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 4vw;
-}
-
-.summary {
-  font-size: 3vw;
-  margin: 3em;
-}
-
-.msg {
-  margin: 1.5em;
-
-  font-size: 3vw;
-  font-family: 'Montserrat';
-  text-transform: uppercase;
-}
-
-.edu {
-  font-size: 6vw;
-  font-family: 'Montserrat';
-  padding-top: 1em;
-  padding-bottom: .5em;
-
-}
-
-.duke, .iron-yard {
-  font-size: 4vw;
-  padding: .3em;
-  color: #444;
-
+  .main .display-title {
+    padding-bottom: .5em;
+    font-size: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat', 'Questrial';
     text-transform: uppercase;
+    text-decoration: bold;
+    color: #888;
+  }
 
-}
+  .main .display-sections {
+    font-family: 'Questrial';
+    font-size: 2.5em;
+  }
 
-.duke em, .iron-yard em {
-  font-size: 3.5vw;
-  display: block;
-  color: #888;
-  text-transform: none;
+  .display-sections a {
+    color: #444;
+    text-decoration: none;
+  }
 
+  .main .display-section {
+    font-family: 'Questrial';
+    padding: .5em;
+    display: inline-block;
+    color: #444;
+  }
 
-}
+  .about-me, .skills, .projects {
+    display: table;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;
+    margin-top: 3em;
+  }
 
-.wrapper {
-  text-align: center;
-  background: white;
-  color: black;
-  font-family: 'Questrial';
-  font-weight: normal;
-  font-style: normal;
-  /*position: absolute;
-  bottom: 0;
-  top:0;
-  left: 0;
-  right: 0;*/
-  margin: .1em;
-  /*height: 100vh;*/
-}
-
-.name, .resume-title, .work-title {
-  font-size: 10vw;
-  margin: 1em auto 0 auto;
-  color: #F15D58 ;
-  font-family: 'Montserrat', 'Questrial';
-}
-
-.title {
-  font-size: 3vw;
-  color: #41D4CF;
-}
+  .projects {
+    /*background: #ddd;*/
+  }
 
 
-.icon-email {
-  display: inline-block;
-  font-size: 8vw;
-  /*margin: -.5em 1em 0 .5em;*/
-  cursor: pointer;
+  .about-sections, .skills-sections, .work-sections {
+    display: table-cell;
+    vertical-align: top;
+    font-size: 3.5em;
+  }
 
-}
-.icon-linkedin {
-  display: inline-block;
-  font-size: 6vw;
-  margin: .5em .5em 0 .5em;
-  cursor: pointer;
-  color: #444;
-  text-decoration: none;
+  .skills-details {
+    margin: 1.5em;
+    text-decoration: none;
+    font-family: 'Questrial';
+    color: #444;
+    font-size: 2vw;
+    line-height: 3vw;
+    /*display: table;
+    table-layout: fixed;*/
+  }
 
+  .skills-details h2 {
+    font-family: 'Montserrat';
+    color: black;
+    font-size: 3vw;
 
-}
+  }
 
-
-.icon-github {
-  display: inline-block;
-  font-size: 8vw;
-  margin: .5em .5em 0 .5em;
-  cursor: pointer;
-  color: #444;
-  text-decoration: none;
-
-
-}
+  .web-dev, .adobe, .strat-comm {
+    margin: 1em;
 
 
-/*.icon-linkedin,
-.icon-instagram {
-  display: inline-block;
-  font-size: 6vw;
+  }
 
-}*/
-
-.menu-item a {
-  color: black;
-  text-decoration:none;
-}
-
-.menu-container {
-  position: relative;
-  /*Affects dropdown positioning
-  and talks to .menu-content positioning*/
-}
-
-.menu-action {
-  background: white;
-  /*padding: 0.5em;*/
-  border: none;
-  color: #444;
-  font-size: 4vw;
-  text-decoration: bold;
-  outline:none;
-  cursor: pointer;
-  font-family: "Questrial", sans-serif;
-  /*box-shadow: 0 0 1px #888888;*/
-}
+  .about-me {
+    /*background: blue;*/
+  }
 
 
-.menu-content {
-  position: absolute;
-  top:1em;
-  left: 0;
-  display: inline-block;
-  /*Controls the dropdowns positioning to button*/
-
-  visibility: hidden;
-  opacity: 0;
-
-  font-size: 0.75em;
-  text-align: left;
-  text-decoration:none;
-
-
-  min-width: 12em;
-  padding: 0;
-  background: transparent;
+  .skill{
+    display: inline-block;
+    margin-right: .25em;
+  }
 
 
 
-  list-style-type: none;
-  /*Look this up*/
-
-  /*border: 1px solid #777;*/
-  /*border around the hidden dropdown*/
 
 
 
-  transition: all 0.15s;
-  /*look into ^, why is all needed?*/
-
-
-}
-
-.menu-show .menu-content {
-  visibility: visible;
-  opacity: 1;
-  top: 0;
-  /*left: 2em;*/
-}
-
-.menu-item {
-  padding: 0.50em;
-  /*border-radius: 50%;*/
-  /*affects spacing between dropdown items*/
-  /*border: 1px solid #777;*/
-  /*padding: 1em;
-  margin: 1em;*/
-  background: white;
-}
-
-li a {
-  display: inline-block;
-}
-
-
-
-/*.menu-item + .menu-item {
-  border-top: 1px solid #777;
-  created the lines separating the dropdown items
-  think it is the border padding between the items
-}*/
-
-
-/*
-h1 {
-  font-size: 3.25em;
-  font-family: 'WarenhausTypenhebelStandard', 'Special Elite';
-  margin: .25em;
-}
-
-
-.title {
-  margin-bottom: .75em;
-  font-size: 1.25em;
-}
-
-
-.portfolio {
-  margin-bottom: .75em;
-}
-
-a {
-  color: black;
-  font-size: 1.25em;
-  font-weight: 700;
-}
-
-.icon-waves {
-  margin-top: .5em;
-  font-size: 5em;
-}
-
-.coming-soon {
-  margin: 0 auto 2em auto;
-  width: 5em;
-  font-size: .9em;
-
-  line-height: 1.25em;
-}*/
-
-
-/*
-@media (max-width: 2000px) {
 
   .wrapper {
-    font-size: 1.5em;
-    padding: 1.5em 0 1em 0;
+    text-align: center;
+    background: white;
+    color: black;
+    font-family: 'Questrial';
+    font-weight: normal;
+    font-style: normal;
+    /*position: absolute;
+    bottom: 0;
+    top:0;
+    left: 0;
+    right: 0;*/
+    /*margin: .1em;*/
+    /*height: 100vh;*/
+  }
+
+  .about-sections {
+    padding: .5em;
+  }
+
+  .about-title {
+    font-size: 2.5em;
+    margin: 0 auto 0 auto;
+    color: #F15D58 ;
+    font-family: 'Montserrat', 'Questrial';
+
+  }
+
+  .skills-title {
+    font-size: 2.5em;
+    margin: .25em auto 0 auto;
+    color: #F15D58 ;
+    font-family: 'Montserrat', 'Questrial';
+  }
+
+  .work-title  {
+    font-size: 2.5em;
+    margin: .25em auto 0 auto;
+    color: #F15D58;
+    font-family: 'Montserrat', 'Questrial';
+  }
+
+  .name {
+
+    text-align: center;
+
+  }
+
+  .pic {
+    display: inline-block;
+    margin: .25em;
+  }
+
+  .about-pic {
+    max-width: 8em;
+    border: none;
+    border-radius: 50%;
     margin-top: 1em;
-    padding-top: 1em;
+
 
   }
 
-  .icon-burst-new {
-    margin-top: 1.5;
+  .my-name {
+    font-size: 1.25em;
+    color: #444;
+    display: inline-block;
+    /*padding: .5em .25em;*/
+    font-family: 'Montserrat';
+    text-transform: lowercase;
+    text-align: center;
+    letter-spacing: .1em;
   }
+
+  .filler {
+    font-size: .25em;
+  }
+
+  .msg {
+    margin-top: .5em;
+    letter-spacing: 0;
+    font-family: 'Montserrat';
+    /*text-align: left;*/
+    text-transform: none;
+
+
+  }
+
+  .msg-title {
+    margin-bottom: .75em;
+    letter-spacing: .1em;
+    color: black;
+  }
+
+  .msg-content {
+    margin-bottom: .5em;
+    font-size: 3vw;
+    color: #888;
+
+  }
+
+  .msg-content div {
+    color: #444;
+
+    font-size: 3vw;
+    /*display: inline-block;*/
+  }
+
+.iron-yard {
+  margin-top: .5em;
+}
+
+
+  .summary {
+    font-size: .7em;
+    margin: 1em 3em;
+    text-align: justify;
+    color: #444;
+  }
+
+
+
+  .edu {
+    font-size: 5vw;
+    font-family: 'Montserrat';
+    padding-top: .5em;
+    padding-bottom: .25em;
+    color: #444;
+  }
+
+  .duke, .iron-yard {
+    font-size: .6em;
+    padding: .3em;
+    color: #444;
+    font-family: 'Montserrat';
+
+  }
+
+  .duke em, .iron-yard em {
+    font-size: .8em;
+    display: block;
+    color: #888;
+    text-transform: none;
+    line-height: 1em;
+    font-family: 'Questrial';
+
+
+  }
+
+  .about-text {
+    margin-bottom: 2em;
+  }
+
+
+
+  .title {
+    font-size: 3vw;
+    color: #41D4CF;
+  }
+
+
+.icons {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+  .icon-email {
+    display: inline-block;
+    font-size: 8vw;
+    /*margin: -.5em 1em 0 .5em;*/
+    cursor: pointer;
+    text-decoration: none;
+    color: #444;
+  }
+  .icon-linkedin {
+    display: inline-block;
+    font-size: 8vw;
+    margin: 0 .25em 0 .25em;
+    /*margin: 0 .5em 1.2em .5em;*/
+    padding-bottom: .5em;
+    cursor: pointer;
+    color: #444;
+    text-decoration: none;
+
+
+  }
+
+
+  .icon-github {
+    display: inline-block;
+    font-size: 8vw;
+    /*margin: 0 .5em 0 .5em;*/
+    cursor: pointer;
+    color: #444;
+    text-decoration: none;
+
+
+  }
+
+  .work-details {
+    margin-top: 1em;
+  }
+
+/*}*/
+
+
+@media (max-width:1250px) {
+
+    .main .display-name  {
+      width: 96vw;
+      font-size: 35vw;
+    }
+
+    .main .display-title {
+      font-size: 4.5vw;
+    }
+
+    .main .display-sections {
+      font-size: 3vw;
+    }
+
+    .main .display-section {
+      font-size: 3.25vw;
+    }
+
+    .about-sections, .skills-sections, .work-sections {
+      font-size: 4vw;
+    }
+
+    .skills-details {
+      font-size: 2vw;
+      line-height: 3vw;
+    }
+
+    .about-me, .skills, .projects {
+      height: 100vh;
+      margin: 0;
+    }
+
+    .my-name {
+      font-size: 6vw;
+    }
+
+    .filler {
+      display: block;
+      font-size: .5em;
+    }
+
+    .summary {
+      font-size: 3vw;
+      margin: 1em 3em;
+    }
+
+    .duke, .iron-yard {
+      font-size: 3vw;
+    }
+
+    .duke em, .iron-yard em {
+      font-size: 2.75vw;
+      line-height: 2.75vw;
+    }
+
+
+      .about-title {
+        font-size: 13vw;
+
+
+      }
+
+      .skills-title {
+        font-size: 13vw;
+        margin: .5em auto 0 auto;
+
+      }
+
+      .work-title  {
+        font-size: 13vw;
+        margin: .5em auto 0 auto;
+
+      }
 
 }
 
 
-@media (max-width: 800px) {
 
-  .wrapper {
-    font-size: 1.4em;
-    padding: 1.5em 0 1em 0;
-  }
-
-}
-
-@media (max-width: 700px) {
-
-  .wrapper {
-    font-size: 1.3em;
-    padding: 2em 0 1em 0;
-
-  }
-}
-
-@media (max-width: 500px) {
-
-  .wrapper {
-    font-size: 1.1em;
-    padding: 2em .5em 1em .5em;;
-
-  }
-}
-
-@media (max-width: 390px) {
-
-  .wrapper {
-    font-size: 1em;
-    padding: 3em 0 2em 0;
-  }
-
-  .icon-waves {
-    font-size: 6em;
-  }
-}
-
-
-@media (max-width: 350px) {
-  .wrapper {
-    font-size: .75em;
-    padding: 2em 1em 2em 1em;
-
-  }
-}*/
-
-
-/*.wrapper2 {
-  height: 100vh;
-}*/
-
-
-@media (max-width: 600px) {
+@media (max-width: 750px) {
 
   .main .display-sections {
     padding: .75em;
   }
 
+  .skills-details {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+
+  .skills-details h2 {
+    font-size: 4vw;
+    line-height: 7vw;
+  }
+
+
+  .about-title, .skills-title, .work-title {
+
+    margin-top: .5em;
+  }
+
+
+
 }
 
 
 
-.duke, .iron-yard {
-  text-decoration: bold;
+@media  (max-device-width: 600px) {
+
+  * {
+    font-size: 2em;
+  }
+
+  .skills-details {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+
+  .skills-details h2 {
+    font-size: 5vw;
+    line-height: 7vw;
+  }
+
+  .about-title, .skills-title, .work-title {
+    font-size: 15vw;
+    /*margin-top: 1.5em;*/
+
+
+}
+
+.skills-title {
+  margin-top: 1.5em;
+}
+
+.msg-title {
+  font-size: 3vw;
+  margin-bottom: .75em;
+}
+
+.msg-content {
+  margin-bottom: .5em;
+  font-size: 4vw;
+
+}
+
+.msg-content div {
+  font-size: 4vw;
+  display: block;
+}
+
+.summary {
+  font-size: 4.5vw;
+  margin: 1em 1.75em;
+}
+
+
+
+  .duke, .iron-yard {
+    font-size: 4vw;
+    padding: .3em;
+    color: #444;
+    font-family: 'Montserrat';
+    line-height: 4.5vw
+  }
+
+  .duke em, .iron-yard em {
+    font-size: 3.5vw;
+    display: block;
+    color: #888;
+    text-transform: none;
+    letter-spacing: .1em;
+    font-family: 'Questrial';
+    line-height: 4vw
+  }
+
+
+
+
+    .my-name {
+      padding: 0;
+      width: 15em;
+
+    }
+
+    .about-title {
+      margin-bottom: .25em;
+    }
+
+    .about-pic, .pic {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 1em;
+    }
+
+    .about-pic {
+      max-width: 10em;
+    }
+
+    .about-me, .skills, .projects {
+      height: 100vh;
+      margin: 0;
+    }
+
 }
