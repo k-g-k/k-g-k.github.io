@@ -16,6 +16,15 @@
     font-family: 'Questrial', sans-serif;
   }
 
+  a {
+    color: #3fbdf5;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #3fbdf5;
+    text-decoration: underline;
+  }
 
   .main {
     height: 100vh;
@@ -345,9 +354,146 @@
     margin-top: 1.5em;
   }
 
+  .project-description {
+    font-size: .75em;
+    padding: 1em 2em;
+    color: #777;
+    line-height: 1.2em;
+  }
+
+
+
   .appt-app {
     margin-bottom: 1em;
   }
+
+  .project-summary {
+    margin: 1em 2em 0;
+    font-size: 1em;
+    color: #444;
+  }
+
+
+  .project-links {
+    color: #ddd;
+    font-size: .75em;
+    margin: .5em 0 0;
+  }
+
+  .project-links a {
+    color: #3fbdf5;
+    padding: .5em;
+  }
+
+
+  .health-accountable .project-title {
+    margin-top: 0;
+    margin-top: .5em;
+  }
+
+
+
+  /* css only show/hide
+
+ */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.project-links-container {
+    position: relative;
+    margin: 3em 0 0;
+}
+
+
+.project-links-container .project-description {
+    display: none;
+    visibility: hidden;
+}
+
+
+input[type=checkbox] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+label[for="health_account"],
+label[for="mem_game"],
+label[for="appt_app"]  {
+    position: absolute;
+    top: -5vw;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    /*padding: .65rem;*/
+    cursor: pointer;
+    color: #3fbdf5;
+}
+
+label[for="health_account"]:active {
+    color: #0d384c;
+}
+
+label[for="health_account"] span:last-of-type,
+label[for="mem_game"] span:last-of-type,
+label[for="appt_app"] span:last-of-type  {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ .section {
+    display: block;
+    visibility: visible;
+    width: 100%;
+}
+
+/*input[type=checkbox]:checked {
+   width: 100%;
+}*/
+
+input[type=checkbox]:checked ~ [for="health_account"] span:first-of-type,
+input[type=checkbox]:checked ~ [for="mem_game"] span:first-of-type,
+input[type=checkbox]:checked ~ [for="appt_app"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="health_account"] span:last-of-type,
+input[type=checkbox]:checked ~ [for="mem_game"] span:last-of-type,
+input[type=checkbox]:checked ~ [for="appt_app"] span:last-of-type {
+    display: block;
+    visibility: visible;
+    color: #0d384c;
+}
+
+
+.project-description h2 {
+  font-size: 1em;
+  font-family: 'Montserrat';
+  color: #555;
+  margin-top: 1em;
+}
+
+.project-tech {
+  color: #777;
+  margin: 0 4.5em;
+}
+
+
 
 /*}*/
 
@@ -431,6 +577,13 @@
         font-size: 7vw;
       }
 
+      .health-accountable .project-title {
+        margin-top: 0;
+        margin-top: .5em;
+      }
+
+
+
 }
 
 
@@ -457,6 +610,21 @@
     margin-top: .5em;
   }
 
+  .project-links-container {
+      margin-top: 3em;
+      font-size: 6vw;
+
+  }
+
+  .project-links {
+      font-size: .75em;
+      line-height: 2em;
+  }
+
+  .project-tech {
+    color: #777;
+    margin: 0 1.5em;
+  }
 
 
 }
@@ -564,5 +732,28 @@
       font-size: 9.5vw;
       margin-top: 2em;
     }
+
+    .health-accountable .project-title {
+      margin-top: 0;
+      margin-top: .75em;
+    }
+
+    .project-links-container {
+        margin-top: 3em;
+        font-size: 6vw;
+
+    }
+
+    .project-links {
+        font-size: .75em;
+        line-height: 2em;
+    }
+
+    .project-summary {
+      font-size: 5vw;
+    }
+
+
+
 
 }

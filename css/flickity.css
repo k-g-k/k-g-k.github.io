@@ -49,6 +49,11 @@
           filter: none;
 }
 
+.flickity-page-dots .dot {
+  width: 8px;
+  height: 8px;
+}
+
 @media screen and ( min-width: 768px ) {
   .gallery-cell {
     height: 500px;
@@ -97,4 +102,10 @@
   .flickity-prev-next-button.no-svg {
     color: transparent;
   }
+
+  .flickity-page-dots .dot {
+  width: 5px;
+  height: 5px;
+}
+
 }
